@@ -1,0 +1,22 @@
+import React, { Component } from 'react';
+{%style%}
+class {%componentName%} extends Component {
+	
+	constructor(props) {
+		super(props);
+
+		this.state = {
+
+		};
+	}
+
+	render() {
+		return(
+			<div className='{%componentName%}'>
+
+			</div>
+		);
+	}
+} 
+
+export default {%componentName%};

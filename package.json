@@ -1,0 +1,30 @@
+{
+  "name": "creact-comp",
+  "version": "1.0.0",
+  "description": "A simple way to create react components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zicsus/creact-comp.git"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "creact-comp": "index.js"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "react-create",
+    "create-react-comp"
+  ],
+  "author": "Himanshu Mishra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zicsus/creact-comp/issues"
+  },
+  "homepage": "https://github.com/zicsus/creact-comp#readme",
+  "dependencies": {}
+}

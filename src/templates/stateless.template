@@ -1,0 +1,11 @@
+import React from 'react';
+{%style%}
+function {%componentName%} {
+	return(
+		<div className='{%componentName%}'>
+
+		</div>
+	);
+} 
+
+export default {%componentName%};
