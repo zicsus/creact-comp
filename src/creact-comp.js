@@ -22,8 +22,7 @@ module.exports = function ()
 	const args = process.argv.splice(2);
 	if (args.length === 0)
 	{
-		console.log("Error: component name not provided;");
-		process.exit();
+		error("Error: component name not provided;");
 	}
 
 	if (args[0].startsWith("-"))
@@ -53,11 +52,53 @@ module.exports = function ()
 				break;
 			}
 
-			default: 
+			case "--save-template":
+			case "-st":
 			{
-				console.log("ERROR: Flag not recognized.");
+				saveTemplate();
 				break;
 			}
+
+			default: 
+			{
+				error("ERROR: Flag not recognized.");
+				break;
+			}
+		}
+	}
+
+	function saveTemplate()
+	{
+		args.splice(0, 1);
+		if (args.length >= 2)
+		{
+			const templatePath = path.join(pwd, args[0]);
+			const templateName = args[1];
+
+			if (templateName.startsWith("-"))
+			{
+				error("ERROR: Template name cannot start with '-'.");
+				process.exit();
+			}
+
+			try 
+			{
+				fs.copyFileSync(templatePath, path.join(__dirname, `/templates/${templateName}.template`));
+				console.log("Template saved !!");
+				console.log("You can use this template by typing-");
+				console.log(`creact-comp <componentName> -t ${templateName}`);
+			}
+			catch(err)
+			{
+				error([
+					"ERROR: Failed to copy template.",
+					err
+				]);
+			}
+		}
+		else
+		{
+			error("ERROR: Provide template path and template name.");
 		}
 	}
 
@@ -67,7 +108,9 @@ module.exports = function ()
 			style = Styles.NONE,
 			stylesheet = "",
 			jsx = false,
-			dir = false;
+			dir = false,
+			useTemplate = false,
+			templateName = "";
 
 		const componentName = args[0];
 		args.splice(0, 1);
@@ -116,22 +159,78 @@ module.exports = function ()
 					dir = true;
 					break;
 				}
+
+				case "-t":
+				{
+					useTemplate = true;
+					break;
+				}
+
+				default:
+				{
+					if (useTemplate)
+					{
+						if (arg && !arg.startsWith("-"))
+						{
+							templateName = arg;
+							useTemplate = false;
+						}
+						else
+						{
+							error("ERROR: Enter valid template name.");
+						}
+					}
+					break;
+				}
 			}
 		}
 
-		createComponent(componentName, dir, state, style, stylesheet, jsx);
+		createComponent(
+			componentName, 
+			dir, 
+			state, 
+			style, 
+			stylesheet, 
+			jsx,
+			templateName
+		);
 	} 
 
-	function createComponent(componentName, dir, state, style, stylesheet, jsx)
+	function createComponent(componentName, 
+			dir, 
+			state, 
+			style, 
+			stylesheet, 
+			jsx,
+			templateName)
 	{
 		let code;
-		if (state)
+
+		if (templateName)
 		{
-			code = fs.readFileSync(STATE_TEMPLATE_PATH, "utf8");
+			try 
+			{
+				const templatePath = path.join(__dirname, `/templates/${templateName}.template`);
+				code = fs.readFileSync(templatePath, "utf8");
+			}
+			catch (err)
+			{
+				error([
+					"ERROR: Unable to read template.",
+					err
+				]);
+			}
 		}
 		else
 		{
-			code = fs.readFileSync(STATELESS_TEMPLATE_PATH, "utf8");
+			if (state)
+			{
+				code = fs.readFileSync(STATE_TEMPLATE_PATH, "utf8");
+			}
+			else
+			{
+				code = fs.readFileSync(STATELESS_TEMPLATE_PATH, "utf8");
+			}
 		}
 
 		// Replace values
@@ -172,4 +271,20 @@ module.exports = function ()
 		}
 	}
 
+	function error(messages)
+	{
+		if (Array.isArray(messages))
+		{
+			for (let i in messages)
+			{
+				console.log(messages[i]);
+			}
+		}
+		else
+		{
+			console.log(messages);
+		}
+
+		process.exit();
+	}
 }

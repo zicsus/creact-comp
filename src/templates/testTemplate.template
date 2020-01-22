@@ -1,0 +1,22 @@
+import React, { Tab } from 'react';
+
+class {%componentName%} extends Tab {
+	
+	constructor(props) {
+		super(props);
+
+		this.state = {
+
+		};
+	}
+
+	render() {
+		return(
+			<div className='{%componentName%}'>
+
+			</div>
+		);
+	}
+} 
+
+export default {%componentName%};
