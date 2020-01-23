@@ -48,7 +48,18 @@ module.exports = function ()
 			case "--help":
 			case "-h":
 			{
-				// Display docs
+				let message = "HELP\n";
+				message += "  creact-comp -v/--version              Know the version of creact-comp.\n";
+				message += "  creact-comp -st/--save-template       Create new template.\n";
+				message += "  creact-comp <componentName> [options] Create new component.\n";
+				message += "\n  Options:\n";
+				message += "    -d	                Creates a [component name] directory with component file inside.\n";
+				message += "    -sl, --stateless	Creates a stateless component.\n";
+				message += "    -jsx                Creates the component with `.jsx` extenstion. (Default is `.js`)\n";
+				message += "    -css, -less, -scss  Create and choose your css preprocessor to generate.\n";
+				message += "    -t <templateName>   Choose your template from which component will be generated. (By default base templates will be used)\n"      
+      
+				console.log(message);
 				break;
 			}
 

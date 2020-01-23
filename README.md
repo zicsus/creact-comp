@@ -39,6 +39,20 @@ Or
 ```bash
 $ creact-comp --help
 ```
+
+
+### Create component
+Usage: 
+```bash
+$ creact-comp <componentName> [options]
+```
+Options:
+      -d                  Creates a [component name] directory with component file inside.
+      -sl, --stateless    Creates a stateless component.
+      -jsx                Creates the component with `.jsx` extenstion. (Default is `.js`)
+      -css, -less, -scss  Create and choose your css preprocessor to generate
+      -t <templateName>   Choose your template from which component will be generated. (By default base templates will be used).
+
 ### Create template
 With creact-comp you can create your own templates and use them to generate components.
 ```bash
@@ -70,16 +84,3 @@ class {%componentName%} extends Component { // creact-comp will replace this wit
 
 export default {%componentName%};
 ```
-
-### Create component
-Usage: 
-```bash
-$ creact-comp <componentName> [options]
-```
-Options:
-
-      -d                  Creates a [component name] directory with component file inside.
-      -sl, --stateless      Creates a stateless component.
-      -jsx                  Creates the component with `.jsx` extenstion. (Default is `.js`)
-      -css, -less, -scss	Create and choose your css preprocessor to generate
-      -t <templateName>     Choose your template from which component will be generated
