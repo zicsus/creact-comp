@@ -205,7 +205,6 @@ module.exports = function ()
 			templateName)
 	{
 		let code;
-
 		if (templateName)
 		{
 			try 

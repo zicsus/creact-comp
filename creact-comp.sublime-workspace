@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"exit",
+				"existsSync\twarning"
+			],
+			[
 				"com",
 				"componentName\tparameter"
 			],
@@ -510,10 +514,6 @@
 			[
 				"publi",
 				"publishBtnText\twarning"
-			],
-			[
-				"private",
-				"privateSelectChange\tproperty"
 			]
 		]
 	},
@@ -523,16 +523,16 @@
 			"file": "src/creact-comp.js",
 			"settings":
 			{
-				"buffer_size": 2786,
+				"buffer_size": 4531,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "himanshu/himanshu.js",
+			"file": "src/arg-types.js",
 			"settings":
 			{
-				"buffer_size": 246,
+				"buffer_size": 40,
 				"line_ending": "Windows"
 			}
 		},
@@ -735,8 +735,12 @@
 	],
 	"file_history":
 	[
-		"/G/hoverify/hoverify/build.js",
+		"/G/Nodejs/creact-comp/himanshu/Local/Local.js",
+		"/G/Nodejs/creact-comp/himanshu/Local.js",
+		"/G/Nodejs/creact-comp/src/templates/testTemplate.template",
 		"/G/Nodejs/creact-comp/himanshu/himanshu.js",
+		"/G/Nodejs/creact-comp/himanshu/temp.js",
+		"/G/hoverify/hoverify/build.js",
 		"/G/Clients/Happy Pregnancy/backend/api/controllers/forum/NewPost.js",
 		"/C/Users/Himanshu mishra/AppData/Roaming/npm/create-react-app.cmd",
 		"/C/Users/Himanshu mishra/AppData/Roaming/npm/creact-comp",
@@ -858,15 +862,11 @@
 		"/G/hoverify/hoverify/build/content-scripts/screenshot.js",
 		"/G/hoverify/hoverify/build/license.js",
 		"/C/Users/Himanshu mishra/Desktop/New Microsoft Word Document.docx",
-		"/G/hoverify/hoverify/node_modules/chance/test/test.address.js",
-		"/G/hoverify/hoverify/node_modules/babel-runtime/helpers/slicedToArrayLoose.js",
-		"/G/hoverify/hoverify/src/license.html",
-		"/G/hoverify/hoverify/src/css/fontello.css",
-		"/G/hoverify/fontello-e8cfeae0/css/fontello.css"
+		"/G/hoverify/hoverify/node_modules/chance/test/test.address.js"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 54.0
 	},
 	"find_in_files":
 	{
@@ -1063,15 +1063,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2786,
+						"buffer_size": 4531,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								443,
-								443
+								529,
+								529
 							]
 						],
 						"settings":
@@ -1086,7 +1086,7 @@
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1026.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1094,25 +1094,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "himanshu/himanshu.js",
-					"semi_transient": false,
+					"file": "src/arg-types.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 246,
+						"buffer_size": 40,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								154,
-								154
+								40,
+								40
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false,
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
@@ -1135,8 +1134,8 @@
 						"selection":
 						[
 							[
-								368,
-								368
+								1029,
+								1029
 							]
 						],
 						"settings":
@@ -1146,7 +1145,7 @@
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2736.0,
+						"translation.y": 456.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
