@@ -1,26 +1,28 @@
 {
   "name": "creact-comp",
-  "version": "1.0.0",
-  "description": "A simple way to create react components",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Simple CLI tool to speed up development by allowing you to create react components with customizations and templates.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "creact-comp": "creact-comp"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zicsus/creact-comp.git"
   },
+  "private": false,
   "preferGlobal": true,
   "bin": {
-    "creact-comp": "index.js"
+    "creact-comp": "src/index.js"
   },
   "keywords": [
     "react",
     "component",
     "react-create",
-    "create-react-comp"
+    "generator",
+    "cli"
   ],
-  "author": "Himanshu Mishra",
+  "author": "Himanshu Mishra <zicsus@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zicsus/creact-comp/issues"

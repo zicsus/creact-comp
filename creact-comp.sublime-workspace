@@ -523,24 +523,17 @@
 			"file": "src/creact-comp.js",
 			"settings":
 			{
-				"buffer_size": 4531,
+				"buffer_size": 5397,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/arg-types.js",
+			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 40,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/G/hoverify/hoverify/minify.js",
-			"settings":
-			{
-				"buffer_size": 3022,
+				"buffer_size": 2184,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -566,7 +559,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 686,
+				"buffer_size": 764,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -730,11 +723,13 @@
 	"expanded_folders":
 	[
 		"/G/Nodejs/creact-comp",
-		"/G/Nodejs/creact-comp/src",
-		"/G/Nodejs/creact-comp/src/templates"
+		"/G/Nodejs/creact-comp/src"
 	],
 	"file_history":
 	[
+		"/G/Nodejs/oauth2-for-electron/package.json",
+		"/G/hoverify/hoverify/minify.js",
+		"/G/Nodejs/creact-comp/README.md",
 		"/G/Nodejs/creact-comp/himanshu/Local/Local.js",
 		"/G/Nodejs/creact-comp/himanshu/Local.js",
 		"/G/Nodejs/creact-comp/src/templates/testTemplate.template",
@@ -755,7 +750,6 @@
 		"/G/Nodejs/create-react-comp/package.json",
 		"/G/Nodejs/creact-comp/package.json",
 		"/G/Nodejs/creact-comp/src",
-		"/G/Nodejs/creact-comp/README.md",
 		"/G/hoverify/hoverify/src/popup/popup.js",
 		"/G/hoverify/hoverify/src/license/license.css",
 		"/G/hoverify/hoverify/build/manifest.json",
@@ -832,7 +826,6 @@
 		"/G/hoverify/hoverifyOld/src/popups/main.js",
 		"/G/hoverify/hoverify/build/popup/popup.css",
 		"/G/hoverify/hoverify/watch.js",
-		"/G/hoverify/hoverify/minify.js",
 		"/G/hoverify/hoverify/build-config.json",
 		"/G/hoverify/hoverify/build/background/background.js",
 		"/G/hoverify/hoverify/package.json",
@@ -861,8 +854,7 @@
 		"/G/hoverify/hoverify/build/popups/main.js",
 		"/G/hoverify/hoverify/build/content-scripts/screenshot.js",
 		"/G/hoverify/hoverify/build/license.js",
-		"/C/Users/Himanshu mishra/Desktop/New Microsoft Word Document.docx",
-		"/G/hoverify/hoverify/node_modules/chance/test/test.address.js"
+		"/C/Users/Himanshu mishra/Desktop/New Microsoft Word Document.docx"
 	],
 	"find":
 	{
@@ -1054,7 +1046,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1063,15 +1055,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4531,
+						"buffer_size": 5397,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								529,
-								529
+								1727,
+								1727
 							]
 						],
 						"settings":
@@ -1086,36 +1078,37 @@
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 685.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/arg-types.js",
-					"semi_transient": true,
+					"file": "README.md",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 40,
+						"buffer_size": 2184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40,
-								40
+								1214,
+								1214
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"use_tab_stops": false
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 583.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1123,36 +1116,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/G/hoverify/hoverify/minify.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3022,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1029,
-								1029
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false,
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 456.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "src/templates/state.template",
 					"semi_transient": false,
 					"settings":
@@ -1180,7 +1143,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "src/templates/stateless.template",
 					"semi_transient": false,
 					"settings":
@@ -1209,20 +1172,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 686,
+						"buffer_size": 764,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								379,
-								379
+								304,
+								304
 							]
 						],
 						"settings":
@@ -1235,7 +1198,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1243,7 +1206,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -1284,7 +1247,7 @@
 	"project": "creact-comp.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
